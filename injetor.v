@@ -5,6 +5,15 @@ module injetor(
   output reg [14:0] saida
 );
 
-// implemente seu código aqui
+always @(*) begin
+  saida = entrada;
+  if(erro && (n<15)) 
+  
+  begin
+  
+    // Inverte o bit na posição n
+    saida[n] = ~saida[n]; 
+  end
+end
 
 endmodule
